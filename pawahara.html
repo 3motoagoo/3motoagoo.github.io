@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>パワハラレコーダー</title>
 
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+/* ヒーロー */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-shadow: 0 0 10px black;
+}
+
+.hero-text h1 {
+  font-size: 24px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background: #ff4fa3;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* アイコン */
+.icon {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.icon img {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid #0f0f0f;
+}
+
+/* セクション */
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+  padding: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ヘッダー画像 -->
+<div class="hero">
+  <img src="images/pawahara_note_header.PNG">
+  <div class="hero-text">
+    <h1>「その一言、証拠ありますけど？」</h1>
+    <a href="#" class="btn">無料で始める</a>
+  </div>
+</div>
+
+<!-- アイコン -->
+<div class="icon">
+  <img src="images/3moto_icon.PNG">
+</div>
+
+<!-- 共感 -->
+<section>
+  <h2>録音、間に合わなかったことない？</h2>
+
+  <div class="card">
+    上司「使えねぇな」<br>
+    …録音してない
+  </div>
+
+  <div class="card">
+    上司「言ってない」<br>
+    …証拠がない
+  </div>
+</section>
+
+<!-- 解決 -->
+<section>
+  <h2>でも大丈夫</h2>
+  <div class="card">
+    このアプリは常に録音待機。<br>
+    「ヤバい」と思った瞬間、<br>
+    <strong>5分前までさかのぼって保存</strong>
+  </div>
+</section>
+
+<!-- 機能 -->
+<section>
+  <h2>できること</h2>
+  <div class="card">✔ バックグラウンド録音</div>
+  <div class="card">✔ 過去5分保存</div>
+  <div class="card">✔ 証拠として残せる</div>
+</section>
+
+<!-- CTA -->
+<section style="text-align:center;">
+  <h2>もう泣き寝入りしない</h2>
+  <a href="#" class="btn">今すぐダウンロード</a>
+</section>
+
+<footer>
+  ※録音の利用は法律をご確認ください<br>
+  © パワハラレコーダー
+</footer>
+
+</body>
+</html>
