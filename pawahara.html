@@ -49,7 +49,9 @@ body {
 /* アイコン */
 .icon {
   position: relative;
-  display: inline-block; /* ←これ重要（幅を画像に合わせる） */
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden; /* ←これ超重要 */
 }
 
 .icon img {
