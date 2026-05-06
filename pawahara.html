@@ -49,8 +49,7 @@ body {
 /* アイコン */
 .icon {
   position: relative;
-  display: inline-block;
-  border: 2px solid red; /* ←デバッグ用 */
+  display: inline-block; /* ←これ重要（幅を画像に合わせる） */
 }
 
 .icon img {
@@ -61,12 +60,14 @@ body {
 .speech {
   position: absolute;
   top: 50%;
-  left: 0; /* ←一旦ここに出す */
-  transform: translateY(-50%);
-  background: red; /* ←目立つ色 */
+  left: -10px; /* 仮置き（あとで調整） */
+  transform: translate(-100%, -50%);
+  background: #ff4fa3;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 /* しっぽ（右向き） */
@@ -80,7 +81,7 @@ body {
   border-style: solid;
   border-color: transparent transparent transparent #ff4fa3;
 }
-
+  
 /* セクション */
 section {
   padding: 40px 20px;
