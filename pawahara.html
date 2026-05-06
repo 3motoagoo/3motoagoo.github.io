@@ -61,25 +61,28 @@ body {
 }
 
 .speech {
-  position: relative;
-  display: inline-block;
-  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -120%);
   background: #ff4fa3;
   color: white;
   padding: 10px 15px;
   border-radius: 15px;
   font-size: 14px;
+  white-space: nowrap;
 }
 
-/* 三角（しっぽ） */
+/* しっぽ */
 .speech::after {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 20px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent #ff4fa3 transparent;
+  border-color: #ff4fa3 transparent transparent transparent;
 }
 
 /* セクション */
