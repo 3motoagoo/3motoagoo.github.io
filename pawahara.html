@@ -48,9 +48,8 @@ body {
 
 /* アイコン */
 .icon {
-  text-align: center;
-  margin-top: -30px;
   position: relative;
+  text-align: center;
 }
 
 .icon img {
@@ -62,9 +61,9 @@ body {
 
 .speech {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -120%);
+  top: 50%;
+  right: 110%; /* ←ここで左に出す */
+  transform: translateY(-50%);
   background: #ff4fa3;
   color: white;
   padding: 10px 15px;
@@ -73,17 +72,18 @@ body {
   white-space: nowrap;
 }
 
-/* しっぽ */
+/* しっぽ（右側に向ける） */
 .speech::after {
   content: "";
   position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
   border-width: 10px;
   border-style: solid;
-  border-color: #ff4fa3 transparent transparent transparent;
+  border-color: transparent transparent transparent #ff4fa3;
 }
+
 /* セクション */
 section {
   padding: 40px 20px;
