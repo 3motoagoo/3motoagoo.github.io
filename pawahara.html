@@ -48,48 +48,17 @@ body {
 
 /* アイコン */
 .icon {
-  position: relative;
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden; /* ←これ超重要 */
-}
-
-.icon img {
-  width: 140px;
-  display: block;
-}
-
-.icon-wrap {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: -30px;
 }
 
-.speech {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-110%, -50%);
-  background: #ff4fa3;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 15px;
-  font-size: 14px;
-  white-space: nowrap;
+.icon img {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid #0f0f0f;
+  box-shadow: 0 0 15px rgba(255, 79, 163, 0.7);
 }
 
-/* しっぽ（右向き） */
-.speech::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -10px;
-  transform: translateY(-50%);
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent transparent #ff4fa3;
-}
-  
 /* セクション */
 section {
   padding: 40px 20px;
@@ -125,11 +94,8 @@ footer {
 </div>
 
 <!-- アイコン -->
-<div class="icon-wrap">
-  <div class="icon">
+<div class="icon">
     <img src="images/3moto_icon.PNG">
-    <div class="speech">録音してないの？甘いわね♡</div>
-  </div>
 </div>
 
 <!-- 共感 -->
