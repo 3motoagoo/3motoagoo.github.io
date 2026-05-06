@@ -59,6 +59,28 @@ body {
   box-shadow: 0 0 15px rgba(255, 79, 163, 0.7);
 }
 
+.speech {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  background: #ff4fa3;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+/* 三角（しっぽ） */
+.speech::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #ff4fa3 transparent;
+}
+
 /* セクション */
 section {
   padding: 40px 20px;
